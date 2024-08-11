@@ -1,0 +1,142 @@
+body {
+    height: 100vh;
+    background-color: black;
+    color: gray;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: black;
+    color: gray;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.login-cadastro input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.login-cadastro button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.carrinho img {
+    width: 40px;
+    height: 40px;
+}
+
+.menu-horizontal {
+    background-color: black;
+    color: gray;
+}
+
+.menu-horizontal ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.menu-horizontal li {
+    cursor: pointer;
+    padding: 16px;
+    border-bottom: 2px solid gray;
+}
+
+.menu-horizontal li a {
+    color: gray;
+    text-decoration: none;
+}
+
+.menu-horizontal li:hover {
+    opacity: 0.8;
+}
+
+.destaques {
+    background-color: black;
+    color: gray;
+    padding: 16px;
+}
+
+footer {
+    background-color: black;
+    color: gray;
+    padding: 16px;
+}
+
+/* Restante do CSS do arquivo original */
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol li {
+    cursor: pointer;
+    background: white;
+    padding: 8px 16px;
+    border-bottom: 1px solid gray;
+}
+
+ol li:hover {
+    opacity: 0.8;
+}
+
+ol li.expense {
+    border-left: 10px solid red;
+}
+
+ol li.income {
+    border-left: 10px solid rgb(0, 0, 0);
+}
+
+ol li:hover button.danger {
+    display: block;
+}
+
+button.danger {
+    width: auto;
+    float: right;
+    display: none;
+}
+
+p {
+    margin: 4px 0;
+}
+
+
+.featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  

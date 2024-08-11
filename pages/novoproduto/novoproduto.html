@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button  onclick="voltar()"> voltar</button>
+
+    <h1>Cadastro de Produtos</h1>
+    <p>Escolha a coleção: 
+      <select id="colecao">
+          <option value="Colar">Colar</option>
+          <option value="Brinco">Brinco</option>
+          <option value="Anel">Anel</option>
+      </select>
+    </p>
+    <p>Digite o nome do produto: <input id="nome" type="text"></p>
+    <p>Digite a descricao: <input id="descricao" type="text"></p>
+    <p>Digite o preço: <input id="preco" type="number"></p>
+    <p>Digite a quantidade: <input id="quantidade" type="number"></p>
+    <p>Escolha a foto:<input id="foto" type="file" accept="image/*" required></p>
+
+    <button onclick="salvarproduto()"> Salvar o novo produto </button>
+
+    <h3>Excluir Produtos</h3>
+    <p>Escolha a coleção: 
+        <select id="colecaoDEL">
+            <option value="Colar">Colar</option>
+            <option value="Brinco">Brinco</option>
+            <option value="Anel">Anel</option>
+        </select>
+      </p>
+    <p>Digite o nome do produto: <input id="nomeDEL" type="text"></p>
+    <button onclick="excluirproduto()"> Excluir um produto </button>
+
+
+    </form>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="../../firebase-init.js"></script>
+    <script src="../../auth-guard.js"></script>
+    <script src="novoproduto.js"></script>
+</body>
+</html>
